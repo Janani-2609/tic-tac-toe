@@ -1,0 +1,62 @@
+ .player {
+  border: 2px solid transparent;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.player-name {
+  color: #FF6A3D;
+  font-family: monospace;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+   /* width: 10rem;  */
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.playername-edit {
+  outline: none;
+  font-family: monospace;
+  font-size: 1rem;
+   /* width: 10rem;  */
+  border: none;
+  padding: 0.5rem;
+  animation: pulse-text 2s infinite;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+} 
+
+.player-symbol {
+  margin-left: 1rem;
+  font-size: 1.3rem;
+  color: #9DAAF2;
+}
+
+button {
+  width: 3rem;
+  border: none;
+  background: none;
+  color: wheat;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0.5rem 0.25rem 0.25rem 0.25rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+  transition: 0.2s;
+}
+
+button:hover {
+  color: #e63600;
+}
+
+li {
+  list-style: none;
+}

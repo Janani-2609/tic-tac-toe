@@ -1,0 +1,79 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+} 
+img {
+  width: 40px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.game-container {
+  margin-left: 25%;
+  max-width: 45rem;
+  /* margin-top: 2%; */
+  padding: 1.2rem;
+  border-radius: 6px;
+  background: transparent;
+  box-shadow: 0 0 20px #9daaf2b1;
+  position: relative;
+}
+.game-container ol {
+  display: flex;
+}
+
+
+#players {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+#players li {
+  align-items: center;
+  border: 3px solid transparent;
+}
+
+#players.player-highlight li.active {
+  border-color: #f6e35a;
+  animation: pulse 2s infinite ease-in-out;
+}
+#players.player-highlight li.active .player-name,
+#players.player-highlight li.active .player-symbol {
+  color: #f6e35a;
+}
+
+.reset {
+  width: 150px;
+  background-color: #e63600;
+  padding: 10px 20px;
+  margin-bottom: 1rem;
+}
+
+.reset:hover {
+  box-shadow: 0 4px 8px 0 #dc3704, 0 6px 20px 0 #de4e22;
+  background-color: #e74b1c;
+  color: white;
+}
+
+.copyrights-text  {
+  margin: 0; 
+  margin-top: 5%;
+  color: white;
+}
+
+
+.copyrights-text p {
+  margin: 0;
+}

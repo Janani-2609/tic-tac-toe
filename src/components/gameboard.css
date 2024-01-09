@@ -1,0 +1,41 @@
+
+#game-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+    margin: 3rem 0;
+    padding: 10px 20px;
+    flex-direction: column;
+  }
+  
+  #game-board ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+    margin: 0;
+    padding: 0;
+  } 
+
+  #game-board  li {
+    margin: 0;
+  }
+  
+  #game-board button {
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    border: none;
+    background: #96a4f3;
+    color: #e63600;
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-family: 'Caprasimo', cursive;
+    padding: 1rem;
+  }
+
+  #game-board button:hover {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 #8d99e3bb, 0 6px 20px 0 #8d99e3bb;
+  }

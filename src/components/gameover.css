@@ -1,0 +1,61 @@
+#game-over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.873);
+  animation: pop-in 0.5s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards;
+}
+
+#game-over h1 {
+  background-color: transparent;
+  font-family: 'Caprasimo', cursive;
+  font-size: 3rem;
+  text-align: center;
+  color: orangered;
+  margin: 0;
+}
+
+#game-over p { 
+  background-color: transparent;
+  margin: 5px 2px;
+  font-family: monospace;
+  font-size: 1rem;
+  text-align: center;
+  color: #e1dec7;
+}
+
+#game-over .winner-text {
+  font-family: 'Caprasimo', cursive;
+  color: orangered;
+  font-size: 22px;
+  margin: 0;
+}
+
+#game-over button {
+  display: block;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: orangered;
+  color: white;
+  padding: 10px 20px;
+  width: 150px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s, color 0.2s;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+#game-over button:hover {
+  background: rgb(255, 98, 41);
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgb(242, 101, 49);
+}
