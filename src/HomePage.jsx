@@ -3,7 +3,7 @@ import logo from './new-logo.png'
 import './home.css'
 import Footer from './Footer'
 
-export default function Home({ onStartGame }) {
+export default function HomePage({ onStartGame }) {
 
     return (
         <>

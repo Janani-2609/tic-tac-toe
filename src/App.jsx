@@ -1,12 +1,11 @@
 import { useState } from 'react'
 import GameBoard from './components/GameBoard'
 import Player from './components/Player'
-import Home from './home'
 import home from './home-icon.png'
 import { WINNING_POSSIBILITIES } from './winning-possibilities'
 import './index.css'
 import GameOver from './components/GameOver'
-
+import HomePage from './HomePage'
 
 const initialGame = [
   [null, null, null],
@@ -102,7 +101,8 @@ function App() {
   return (
     <div>
       {showHome ? (
-        <Home onStartGame={handleStartGame} />
+        <HomePage onStartGame={handleStartGame} />
+        
       ) : (
         <center>
           <img src={home} alt="" onClick={handleGoHome} />
